@@ -8,9 +8,9 @@ word = st.selectbox("Choose a word:", ["beautiful", "angry"])
 if st.button("Generate Art"):
     # TODO: Replace with your full pipeline logic
     st.write("Generating... (this may take a few minutes)")
-    # subprocess.run(["python", "./components/generate_styled_words.py"])
-    # subprocess.run(["python", "./components/generate_background.py"])
-    # subprocess.run(["python", "./components/assemble_art.py"])
+    subprocess.run(["python", "./components/generate_styled_words.py"])
+    subprocess.run(["python", "./components/generate_background.py"])
+    subprocess.run(["python", "./components/assemble_art.py"])
     st.image(FINAL_ART_PATH)
     st.write(" ")
     st.write("intermediate images created:")
